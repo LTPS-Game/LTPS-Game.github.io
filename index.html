@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Transferring experience to new environments is a central challenge for interactive agents. We introduce LTPS, a framework for learning transferable policies through shared state, task, and action concepts. Through joint concept learning and action prediction, a vision-language model learns to interpret visual observations and select semantic actions. A reusable skill library then executes these actions, allowing the same policy to operate across environments with lightweight skill adaptation.">
+  <meta name="theme-color" content="#ffffff">
+  <title>LTPS: Learning Transferable Policies through Shared Semantic Concepts</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a73e8'/%3E%3Cpath d='M16 31h16m-8-8v16' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='27' r='3' fill='white'/%3E%3Ccircle cx='49' cy='37' r='3' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261010-ltps">
+  <script src="content.js?v=20261010-ltps" defer></script>
+  <script src="highlights.js?v=20261010-ltps" defer></script>
+  <script src="app.js?v=20261010-ltps" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#highlights">Skip to gameplay</a>
+  <main class="page">
+    <!-- 1. Project identity. Edit the copy and links in content.js. -->
+    <header class="hero">
+      <h1 data-content="title">LTPS: Learning Transferable Policies through Shared Semantic Concepts</h1>
+      <p class="subtitle" data-content="subtitle" hidden></p>
+      <div class="project-links" id="project-links">
+        <span class="paper-status">Paper coming soon</span>
+      </div>
+    </header>
+
+    <!-- 2. Six highlights per model: three seen games and three held-out games. -->
+    <section class="highlights panel" id="highlights" aria-labelledby="highlights-title">
+      <div class="section-heading">
+        <h2 id="highlights-title">Gameplay highlights</h2>
+        <div class="playback-controls">
+          <div class="model-tabs" role="tablist" aria-label="Model size">
+            <button id="tab-4b" role="tab" aria-selected="true" aria-controls="gameplay-panel" data-model="4B">4B</button>
+            <button id="tab-08b" role="tab" aria-selected="false" aria-controls="gameplay-panel" data-model="0.8B" tabindex="-1">0.8B</button>
+          </div>
+          <button class="playback-button" id="toggle-playback" type="button">Pause all</button>
+        </div>
+      </div>
+      <div id="gameplay-panel" role="tabpanel" aria-labelledby="tab-4b" tabindex="0">
+        <div class="game-group">
+          <h3>In-distribution</h3>
+          <div class="video-grid" id="seen-grid"></div>
+        </div>
+        <div class="game-group">
+          <h3>Held-out games</h3>
+          <div class="video-grid" id="unseen-grid"></div>
+        </div>
+      </div>
+      <p class="gallery-note">Selected real-time clips. Held-out games are unseen in training.</p>
+      <noscript><p>Enable JavaScript to browse the gameplay highlights.</p></noscript>
+    </section>
+
+    <!-- 3. Abstract and method figure. -->
+    <section class="overview panel" aria-labelledby="abstract-title">
+      <h2 id="abstract-title">Abstract</h2>
+      <p class="abstract-copy" data-content="abstract">Transferring experience to new environments is a central challenge for interactive agents. We introduce LTPS, a framework for learning transferable policies through shared state, task, and action concepts. Through joint concept learning and action prediction, a vision-language model learns to interpret visual observations and select semantic actions. A reusable skill library then executes these actions, allowing the same policy to operate across environments with lightweight skill adaptation.</p>
+      <figure class="method-figure">
+        <img id="method-image" src="assets/images/method.png" alt="LTPS framework: shared state, task, and action concepts guide a vision-language decision model, while game-specific skills ground semantic actions into controller inputs." width="2200" height="963" loading="lazy">
+      </figure>
+    </section>
+
+    <!-- 4. Contact. -->
+    <footer class="footer">
+      <span data-content="shortName">LTPS</span>
+      <span class="footer-separator" aria-hidden="true">·</span>
+      <span id="contact"><a href="mailto:Qiushao418@sjtu.edu.cn">Qiushao418@sjtu.edu.cn</a></span>
+    </footer>
+  </main>
+</body>
+</html>
